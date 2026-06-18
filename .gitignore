@@ -1,0 +1,29 @@
+# Environment variables
+.env.local
+.env*.local
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+.nyc_output
+coverage
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+dist/
+
+# Misc
+.DS_Store
+*.pem
+.vercel
+
+# Local database files
+*.db
+*.db-shm
+*.db-wal
+local.db

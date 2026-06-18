@@ -1,0 +1,27 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm ci",
+  "framework": "nextjs",
+  "env": {
+    "TURSO_DATABASE_URL": {
+      "description": "Turso database URL from https://app.turso.io",
+      "required": true
+    },
+    "TURSO_AUTH_TOKEN": {
+      "description": "Turso authentication token",
+      "required": true
+    },
+    "ADMIN_USERNAME": {
+      "description": "Admin username (optional, defaults to 'admin')"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Admin password (optional, defaults to 'admin123')"
+    }
+  },
+  "buildIgnore": [
+    "local.db",
+    "db",
+    "db-wal"
+  ]
+}
